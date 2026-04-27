@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liam Mgmt | Boutique Talent Management for Models & Creators</title>
+<meta name="description" content="A boutique mother agency for male models and digital creators. We develop talent and place them with leading agencies worldwide.">
+<meta name="keywords" content="modeling agency, mother agency, male models, talent management, men's modeling agency, boutique modeling agency, digital creator management, muay thai management, male model representation, talent agency new york">
+<meta name="author" content="Liam Mgmt">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://liammgmt.com/">
+
+<!-- OpenGraph (Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://liammgmt.com/">
+<meta property="og:site_name" content="Liam Mgmt">
+<meta property="og:title" content="Liam Mgmt | Boutique Talent Management for Models & Creators">
+<meta property="og:description" content="A boutique mother agency for male models and digital creators. We develop talent and place them with leading agencies worldwide.">
+<meta property="og:image" content="https://liammgmt.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Liam Mgmt logo">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Liam Mgmt | Boutique Talent Management for Models & Creators">
+<meta name="twitter:description" content="A boutique mother agency for male models and digital creators. We develop talent and place them with leading agencies worldwide.">
+<meta name="twitter:image" content="https://liammgmt.com/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="favicon.jpg">
+<link rel="apple-touch-icon" href="favicon.jpg">
+
+<!-- Theme -->
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #0a0a0a;
+    --muted: #888;
+    --line: #e6e6e6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .serif { font-family: 'Times New Roman', Times, serif; font-weight: 400; }
+
+  /* ============== TOP BAR ============== */
+  .topbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    height: 56px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .logo img {
+    height: 32px;
+    width: auto;
+    display: block;
+  }
+  .logo .wordmark { font-weight: 600; }
+  .logo .wordmark em {
+    font-style: normal;
+    font-weight: 300;
+    opacity: 0.55;
+  }
+  .topbar nav ul {
+    display: flex;
+    gap: 1.75rem;
+    list-style: none;
+  }
+  .topbar nav a {
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: opacity 0.2s;
+  }
+  .topbar nav a:hover { opacity: 0.5; }
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .search-btn:hover { opacity: 0.5; }
+
+  /* ============== HERO STRIP ============== */
+  .hero-strip {
+    margin-top: 56px;
+    padding: 5rem 1.5rem 3rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-strip h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: clamp(2.5rem, 6vw, 5.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+    max-width: 16ch;
+  }
+  .hero-strip h1 em {
+    font-style: italic;
+    color: var(--muted);
+  }
+  .hero-strip-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .hero-strip-meta p {
+    max-width: 50ch;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  .roster-count {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--muted);
+  }
+  .roster-count strong {
+    font-style: normal;
+    font-family: 'Archivo';
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  /* ============== DIVISION BAR ============== */
+  .division-bar {
+    position: sticky;
+    top: 56px;
+    z-index: 90;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .divisions {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+  .division-btn {
+    background: none;
+    border: 1px solid var(--line);
+    padding: 0.45rem 0.9rem;
+    font-family: inherit;
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 999px;
+    transition: all 0.2s ease;
+    color: var(--ink);
+  }
+  .division-btn:hover { border-color: var(--ink); }
+  .division-btn.active {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+  .grid-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+  }
+  .grid-toggle {
+    display: flex;
+    gap: 2px;
+    background: var(--line);
+    padding: 2px;
+    border-radius: 4px;
+  }
+  .grid-toggle button {
+    background: none;
+    border: none;
+    padding: 0.35rem 0.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    color: var(--muted);
+    transition: all 0.2s;
+  }
+  .grid-toggle button.active {
+    background: var(--bg);
+    color: var(--ink);
+  }
+  .grid-toggle svg { width: 14px; height: 14px; display: block; }
+
+  /* ============== ROSTER GRID ============== */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+  }
+  .grid.dense { grid-template-columns: repeat(6, 1fr); }
+  .grid.large { grid-template-columns: repeat(4, 1fr); }
+
+  .model {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: #f8f8f8;
+    user-select: none;
+  }
+  .model-photo {
+    position: absolute;
+    inset: 0;
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .model-photo svg, .model-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  .model:hover .model-photo { transform: scale(1.04); }
+
+  .model-info {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 1rem 1.1rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0) 100%);
+    color: white;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    pointer-events: none;
+  }
+  .model:hover .model-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .model-name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.3rem;
+  }
+  .model-meta {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.85;
+  }
+  .model-meta span:not(:last-child)::after {
+    content: ' · ';
+    opacity: 0.6;
+  }
+  .model-tag {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    background: rgba(255,255,255,0.95);
+    color: var(--ink);
+    font-size: 0.62rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.3rem 0.55rem;
+    border-radius: 3px;
+    z-index: 2;
+  }
+  .model.hidden { display: none; }
+
+  /* ============== ABOUT ============== */
+  .about {
+    padding: 8rem 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+  .about-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+  }
+  .about-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .about h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+    max-width: 22ch;
+  }
+  .about h2 em { font-style: italic; color: var(--muted); }
+  .about p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: #333;
+    max-width: 60ch;
+    margin-bottom: 1.25rem;
+  }
+  .offices {
+    max-width: 1400px;
+    margin: 5rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--line);
+  }
+  .office .office-city {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+  .office .office-detail {
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* ============== FAQ ============== */
+  .faq {
+    background: var(--bg);
+    padding: 7rem 1.5rem 5rem;
+    border-top: 1px solid var(--line);
+  }
+  .faq-inner {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .faq-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  .faq h2 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 3rem;
+  }
+  .faq h2 em { font-style: italic; color: var(--muted); }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item:first-of-type { border-top: 1px solid var(--line); }
+  .faq-item summary {
+    padding: 1.5rem 0;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--muted);
+    transition: transform 0.3s;
+  }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item summary:hover { opacity: 0.6; }
+  .faq-body {
+    padding: 0 0 1.75rem;
+    color: #444;
+    line-height: 1.7;
+    max-width: 68ch;
+  }
+  .faq-body a { color: inherit; border-bottom: 1px solid currentColor; }
+
+  @media (max-width: 800px) {
+    .faq { padding: 4rem 1.25rem 3rem; }
+    .faq h2 { margin-bottom: 2rem; }
+  }
+
+  /* ============== CONTACT ============== */
+  .contact {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 6rem 1.5rem;
+  }
+  .contact-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .contact h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -0.025em;
+    margin-bottom: 3rem;
+    max-width: 18ch;
+  }
+  .contact h2 em { font-style: italic; opacity: 0.5; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 2.5rem;
+  }
+  .contact-block-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+    margin-bottom: 0.75rem;
+  }
+  .contact-block a, .contact-block p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    transition: opacity 0.2s;
+  }
+  .contact-block a:hover { opacity: 0.6; }
+
+  /* ============== FOOTER ============== */
+  footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.6);
+    padding: 2.25rem 1.5rem 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 2rem;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  footer a { color: rgba(255,255,255,0.85); transition: color 0.2s; }
+  footer a:hover { color: white; }
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+  }
+  .footer-logo {
+    height: 36px;
+    width: auto;
+    display: block;
+    filter: invert(1);
+  }
+  .footer-name {
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+  }
+  footer .socials {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .footer-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: right;
+    align-items: flex-end;
+  }
+  @media (max-width: 800px) {
+    footer {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 1.25rem;
+    }
+    .footer-brand { justify-content: center; }
+    .footer-meta { align-items: center; text-align: center; }
+  }
+
+  /* ============== RESPONSIVE ============== */
+  @media (max-width: 1100px) {
+    .grid { grid-template-columns: repeat(4, 1fr); }
+    .grid.dense { grid-template-columns: repeat(5, 1fr); }
+    .grid.large { grid-template-columns: repeat(3, 1fr); }
+    .offices { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 800px) {
+    .topbar nav { display: none; }
+    .grid, .grid.dense, .grid.large { grid-template-columns: repeat(2, 1fr); }
+    .about-inner { grid-template-columns: 1fr; gap: 1rem; }
+    .contact-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .hero-strip { padding: 4rem 1.5rem 2rem; }
+    .grid-controls { width: 100%; justify-content: space-between; }
+    .model-info {
+      opacity: 1;
+      transform: translateY(0);
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    }
+    .model-name { font-size: 1.1rem; }
+    .model-meta { font-size: 0.62rem; }
+  }
+  @media (max-width: 480px) {
+    .grid, .grid.dense, .grid.large { grid-template-columns: 1fr; }
+    .hero-strip h1 { font-size: 2.5rem; }
+  }
+
+  .fade-in { animation: fade 0.5s ease backwards; }
+  @keyframes fade {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ============== SEARCH OVERLAY ============== */
+  .search-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    z-index: 200;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    display: grid;
+    place-items: start center;
+    padding-top: 18vh;
+  }
+  .search-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .search-overlay-inner {
+    width: 100%;
+    max-width: 640px;
+    padding: 0 1.5rem;
+    position: relative;
+  }
+  .search-close {
+    position: absolute;
+    top: -8vh;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--ink);
+    line-height: 1;
+    padding: 0.5rem;
+  }
+  .search-label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+  .search-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 0.75rem;
+  }
+  .search-input-wrap svg { color: var(--muted); flex-shrink: 0; }
+  #searchInput {
+    flex: 1;
+    border: none;
+    background: none;
+    font-family: 'Times New Roman', serif;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    color: var(--ink);
+    outline: none;
+    padding: 0.25rem 0;
+  }
+  #searchInput::placeholder {
+    color: var(--muted);
+    font-style: italic;
+    opacity: 0.7;
+  }
+  .search-hint {
+    margin-top: 1.25rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+  .search-hint kbd {
+    background: var(--line);
+    border-radius: 3px;
+    padding: 0.15rem 0.4rem;
+    font-family: inherit;
+    font-size: 0.65rem;
+    margin: 0 0.15rem;
+  }
+
+  .no-results {
+    grid-column: 1 / -1;
+    padding: 5rem 2rem;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--muted);
+  }
+
+  /* Coming Soon model card styling */
+  .model.coming-soon {
+    background: #faf8f4;
+    cursor: default;
+  }
+  .model.coming-soon .model-tag {
+    background: rgba(255,255,255,0.7);
+    color: var(--muted);
+  }
+  .model.coming-soon:hover .model-photo { transform: none; }
+  .model.coming-soon .model-info {
+    background: linear-gradient(to top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0) 100%);
+    color: var(--muted);
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .model.coming-soon .model-name {
+    font-style: italic;
+    color: var(--muted);
+  }
+
+
+</style>
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Liam Mgmt",
+  "alternateName": "Liam Management",
+  "legalName": "Liam Enterprises LLC",
+  "url": "https://liammgmt.com",
+  "logo": "https://liammgmt.com/og-image.jpg",
+  "image": "https://liammgmt.com/og-image.jpg",
+  "description": "Liam Mgmt is a boutique talent management agency representing male models and digital creators. Mother agency placing talent with leading agencies worldwide.",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "304 Park Ave S",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10010",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Miami",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Dallas",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "bookings@liammgmt.com",
+      "contactType": "Bookings"
+    },
+    {
+      "@type": "ContactPoint",
+      "email": "scouting@liammgmt.com",
+      "contactType": "Scouting"
+    },
+    {
+      "@type": "ContactPoint",
+      "email": "hello@liammgmt.com",
+      "contactType": "General Inquiries"
+    }
+  ],
+  "sameAs": [
+    "https://instagram.com/liammgmt"
+  ],
+  "knowsAbout": ["Talent Management", "Modeling", "Male Modeling", "Digital Creators", "Influencer Management", "Muay Thai Athlete Representation"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a mother agency do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A mother agency is the primary agency that discovers, develops, and represents a model or creator. We handle career strategy, professional development, and place talent with larger destination agencies in major markets worldwide. Think of us as the home base. While our talent may be signed to additional agencies in cities like Paris, Milan, London, or Tokyo, we remain the central management throughout their career."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who does Liam Mgmt represent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We represent male models, digital creators, and Muay Thai athletes who cross over into modeling and content. Our roster is intentionally small. We focus on individuals with a distinct point of view, strong work ethic, and long-term potential rather than quick placements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I apply to be represented?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Submit your application through our Get Scouted form at liammgmt.com/scout.html. We review every application personally. If we see a fit, someone from our team will reach out within two weeks. We do not require professional photos, formal training, or prior experience to apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a mother agency and a destination agency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A destination agency is one that books work in a specific market, like New York or Paris. They handle bookings within that city. A mother agency, like Liam Mgmt, manages the whole career. We coordinate with destination agencies on behalf of our talent, set strategy, negotiate contracts, and protect our talent's long-term interests across every market they work in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you charge upfront fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Liam Mgmt never charges fees to apply, audition, or be represented. We earn through commission on bookings we secure for our talent. Anyone claiming to represent us and asking for upfront payment is not affiliated with our agency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Liam Mgmt located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our headquarters is in New York at 304 Park Avenue South. We have additional offices in Los Angeles, Miami, and Dallas. We work with talent based anywhere and place them with agencies worldwide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need professional photos to apply?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Natural digital snapshots taken on a phone are exactly what we want. Clean face, no makeup, hair pulled back, plain background, natural light. We are looking at you, not at production value."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div id="site-nav"></div>
+
+<!-- HERO STRIP -->
+<section class="hero-strip">
+  <h1>A management agency for the next <em>generation</em> of men and creators.</h1>
+  <div class="hero-strip-meta">
+    <p>Liam Mgmt is a boutique talent management agency representing male models and digital creators across editorial, commercial, runway, and brand work.</p>
+    <div class="roster-count">Currently representing <strong>10</strong> talents</div>
+  </div>
+</section>
+
+<!-- DIVISION BAR -->
+<div class="division-bar">
+  <div class="divisions">
+    <button class="division-btn active" data-division="all">All</button>
+    <button class="division-btn" data-division="men">Men</button>
+    <button class="division-btn" data-division="creators">Creators</button>
+    <button class="division-btn" data-division="development">Development</button>
+  </div>
+  <div class="grid-controls">
+    <span><span id="visibleCount">10</span> Talents</span>
+    <div class="grid-toggle">
+      <button data-density="large" aria-label="Large grid">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>
+      </button>
+      <button data-density="default" class="active" aria-label="Default grid">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="5" height="5"/><rect x="10" y="3" width="5" height="5"/><rect x="17" y="3" width="4" height="5"/><rect x="3" y="10" width="5" height="5"/><rect x="10" y="10" width="5" height="5"/><rect x="17" y="10" width="4" height="5"/><rect x="3" y="17" width="5" height="4"/><rect x="10" y="17" width="5" height="4"/><rect x="17" y="17" width="4" height="4"/></svg>
+      </button>
+      <button data-density="dense" aria-label="Dense grid">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="3" height="3"/><rect x="8" y="3" width="3" height="3"/><rect x="13" y="3" width="3" height="3"/><rect x="18" y="3" width="3" height="3"/><rect x="3" y="8" width="3" height="3"/><rect x="8" y="8" width="3" height="3"/><rect x="13" y="8" width="3" height="3"/><rect x="18" y="8" width="3" height="3"/><rect x="3" y="13" width="3" height="3"/><rect x="8" y="13" width="3" height="3"/><rect x="13" y="13" width="3" height="3"/><rect x="18" y="13" width="3" height="3"/><rect x="3" y="18" width="3" height="3"/><rect x="8" y="18" width="3" height="3"/><rect x="13" y="18" width="3" height="3"/><rect x="18" y="18" width="3" height="3"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ROSTER -->
+<section id="roster">
+  <div class="grid" id="grid"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-label">About / Liam Mgmt</div>
+    <div>
+      <h2>Built on relationships. Driven by <em>results</em>.</h2>
+      <p>Liam Mgmt is a boutique talent management agency representing a deliberately small roster of men and digital creators. We are hands-on by design. Every talent we sign gets the time, attention, and strategic guidance that larger agencies simply cannot offer.</p>
+      <p>We have established relationships with leading agencies worldwide, and we use them to get our talent placed where they belong.</p>
+    </div>
+  </div>
+  <div class="offices">
+    <div class="office">
+      <div class="office-city">New York</div>
+      <div class="office-detail">Headquarters<br>304 Park Ave S<br>New York, NY 10010</div>
+    </div>
+    <div class="office">
+      <div class="office-city">Los Angeles</div>
+      <div class="office-detail">West Coast Office<br>By appointment</div>
+    </div>
+    <div class="office">
+      <div class="office-city">Miami</div>
+      <div class="office-detail">Southern Office<br>By appointment</div>
+    </div>
+    <div class="office">
+      <div class="office-city">Dallas</div>
+      <div class="office-detail">Texas Office<br>By appointment</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ - rich snippet target for SEO -->
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="faq-label">FAQ</div>
+    <h2>Common <em>questions.</em></h2>
+
+    <details class="faq-item">
+      <summary>What does a mother agency do?</summary>
+      <div class="faq-body">
+        <p>A mother agency is the primary agency that discovers, develops, and represents a model or creator. We handle career strategy, professional development, and place talent with larger destination agencies in major markets worldwide. Think of us as the home base. While our talent may be signed to additional agencies in cities like Paris, Milan, London, or Tokyo, we remain the central management throughout their career.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Who does Liam Mgmt represent?</summary>
+      <div class="faq-body">
+        <p>We represent male models, digital creators, and Muay Thai athletes who cross over into modeling and content. Our roster is intentionally small. We focus on individuals with a distinct point of view, strong work ethic, and long-term potential rather than quick placements.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I apply to be represented?</summary>
+      <div class="faq-body">
+        <p>Submit your application through our <a href="scout.html">Get Scouted</a> form. We review every application personally. If we see a fit, someone from our team will reach out within two weeks. We do not require professional photos, formal training, or prior experience to apply.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What is the difference between a mother agency and a destination agency?</summary>
+      <div class="faq-body">
+        <p>A destination agency is one that books work in a specific market, like New York or Paris. They handle bookings within that city. A mother agency, like Liam Mgmt, manages the whole career. We coordinate with destination agencies on behalf of our talent, set strategy, negotiate contracts, and protect our talent's long-term interests across every market they work in.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do you charge upfront fees?</summary>
+      <div class="faq-body">
+        <p>No. Liam Mgmt never charges fees to apply, audition, or be represented. We earn through commission on bookings we secure for our talent. Anyone claiming to represent us and asking for upfront payment is not affiliated with our agency. Verify by emailing desk@liammgmt.com directly.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Where are you located?</summary>
+      <div class="faq-body">
+        <p>Our headquarters is in New York at 304 Park Avenue South. We have additional offices in Los Angeles, Miami, and Dallas. We work with talent based anywhere and place them with agencies worldwide.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do I need professional photos to apply?</summary>
+      <div class="faq-body">
+        <p>No. Natural digital snapshots taken on a phone are exactly what we want. Clean face, no makeup, hair pulled back, plain background, natural light. We are looking at you, not at production value.</p>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <h2>Bookings, scouting, <em>and everything in between.</em></h2>
+    <div class="contact-grid">
+      <div class="contact-block">
+        <div class="contact-block-label">Bookings & Press</div>
+        <a href="mailto:bookings@liammgmt.com">bookings@liammgmt.com</a>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-label">New Faces / Scouting</div>
+        <a href="mailto:scouting@liammgmt.com">scouting@liammgmt.com</a>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-label">General</div>
+        <a href="mailto:hello@liammgmt.com">hello@liammgmt.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+
+<script src="roster.js"></script>
+<script>
+  // ============== ROSTER DATA ==============
+
+
+  function shade(hex, percent) {
+    const num = parseInt(hex.replace('#',''), 16);
+    const r = Math.max(0, Math.min(255, (num >> 16) + percent));
+    const g = Math.max(0, Math.min(255, ((num >> 8) & 0x00FF) + percent));
+    const b = Math.max(0, Math.min(255, (num & 0x0000FF) + percent));
+    return '#' + ((r << 16) | (g << 8) | b).toString(16).padStart(6, '0');
+  }
+
+  function generatePortrait(seed, palette) {
+    const [skin, hair] = palette;
+    const variants = [
+      `<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs><linearGradient id="bg${seed}a" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="${shade(skin, 12)}"/>
+          <stop offset="100%" stop-color="${shade(skin, -8)}"/>
+        </linearGradient></defs>
+        <rect width="300" height="400" fill="url(#bg${seed}a)"/>
+        <path d="M 30 400 Q 30 280 80 250 L 220 250 Q 270 280 270 400 Z" fill="${shade(hair, 35)}" opacity="0.4"/>
+        <rect x="125" y="220" width="50" height="50" fill="${shade(skin, -15)}"/>
+        <ellipse cx="150" cy="170" rx="62" ry="78" fill="${skin}"/>
+        <path d="M 88 145 Q 95 90 150 85 Q 205 90 212 145 Q 210 110 150 105 Q 90 110 88 145 Z" fill="${hair}"/>
+        <path d="M 95 200 Q 150 245 205 200 L 200 220 Q 150 250 100 220 Z" fill="${shade(skin, -20)}" opacity="0.3"/>
+      </svg>`,
+      `<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs><linearGradient id="bg${seed}b" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="${shade(skin, 18)}"/>
+          <stop offset="100%" stop-color="${shade(skin, -12)}"/>
+        </linearGradient></defs>
+        <rect width="300" height="400" fill="url(#bg${seed}b)"/>
+        <path d="M 20 400 Q 30 270 90 240 L 230 250 Q 280 280 285 400 Z" fill="${shade(hair, 40)}" opacity="0.35"/>
+        <rect x="135" y="215" width="45" height="55" fill="${shade(skin, -18)}"/>
+        <ellipse cx="160" cy="165" rx="58" ry="75" fill="${skin}"/>
+        <path d="M 100 140 Q 110 80 165 80 Q 220 95 218 150 Q 200 105 165 100 Q 105 105 100 140 Z" fill="${hair}"/>
+      </svg>`,
+      `<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs><linearGradient id="bg${seed}c" x1="50%" y1="0%" x2="50%" y2="100%">
+          <stop offset="0%" stop-color="${shade(skin, 8)}"/>
+          <stop offset="100%" stop-color="${shade(skin, -15)}"/>
+        </linearGradient></defs>
+        <rect width="300" height="400" fill="url(#bg${seed}c)"/>
+        <path d="M 0 400 Q 0 260 70 230 L 230 230 Q 300 260 300 400 Z" fill="${shade(hair, 30)}" opacity="0.5"/>
+        <rect x="128" y="195" width="44" height="50" fill="${shade(skin, -12)}"/>
+        <ellipse cx="150" cy="150" rx="56" ry="70" fill="${skin}"/>
+        <path d="M 92 130 Q 100 75 150 70 Q 205 80 210 135 Q 195 95 150 90 Q 95 95 92 130 Z" fill="${hair}"/>
+        <path d="M 95 175 Q 150 215 205 175 L 200 195 Q 150 225 100 195 Z" fill="${shade(skin, -25)}" opacity="0.25"/>
+      </svg>`
+    ];
+    return variants[seed % 3];
+  }
+
+  function renderRoster(filter = 'all', searchTerm = '') {
+    const grid = document.getElementById('grid');
+    const searchLower = searchTerm.toLowerCase().trim();
+    const filtered = roster.filter(m => {
+      const divisionMatch = filter === 'all' || m.division === filter;
+      if (!divisionMatch) return false;
+      if (!searchLower) return true;
+      if (m.comingSoon) return false;
+      const haystack = (m.first + ' ' + m.last + ' ' + m.tags.join(' ') + ' ' + m.division).toLowerCase();
+      return haystack.includes(searchLower);
+    });
+
+    if (filtered.length === 0) {
+      grid.innerHTML = `<div class="no-results">No talent matches &ldquo;${searchTerm}&rdquo;. Try a different search.</div>`;
+    } else {
+      grid.innerHTML = filtered.map((m, i) => {
+        const tagLabel = m.division === 'creators' ? 'Creator' : m.division === 'development' ? 'New Face' : 'Men';
+        const comingClass = m.comingSoon ? ' coming-soon' : '';
+        const fullName = m.comingSoon ? 'Coming Soon' : `${m.first} ${m.last}`;
+        const slugAttr = m.comingSoon ? '' : ` data-slug="${m.slug}"`;
+        // Use real card photo if photoCount > 0, otherwise fall back to placeholder
+        const photoMarkup = m.comingSoon
+          ? generateComingSoon(i, m.palette)
+          : (m.photoCount > 0
+              ? `<img src="photos/${m.slug}/card.jpg" alt="${m.first} ${m.last}" loading="lazy" onerror="this.outerHTML=this.dataset.fallback" data-fallback='${generatePortrait(i, m.palette).replace(/'/g, "&apos;")}'>`
+              : generatePortrait(i, m.palette));
+        return `
+          <article class="model${comingClass}" data-division="${m.division}"${slugAttr} style="animation-delay: ${i * 0.02}s">
+            <span class="model-tag">${tagLabel}</span>
+            <div class="model-photo">${photoMarkup}</div>
+            <div class="model-info">
+              <div class="model-name">${fullName}</div>
+              <div class="model-meta">${m.tags.map(t => `<span>${t}</span>`).join('')}</div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+    document.getElementById('visibleCount').textContent = filtered.length;
+  }
+
+  function generateComingSoon(seed, palette) {
+    const [light, dark] = palette;
+    return `<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs><linearGradient id="cs${seed}" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="${light}"/>
+        <stop offset="100%" stop-color="${dark}" stop-opacity="0.4"/>
+      </linearGradient></defs>
+      <rect width="300" height="400" fill="url(#cs${seed})"/>
+      <text x="150" y="205" text-anchor="middle" font-family="Times New Roman, serif" font-style="italic" font-size="22" fill="${dark}" opacity="0.55">tba</text>
+    </svg>`;
+  }
+
+  let currentFilter = 'all';
+  let currentSearch = '';
+  renderRoster();
+
+  document.querySelectorAll('.division-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.division-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.division;
+      renderRoster(currentFilter, currentSearch);
+    });
+  });
+
+  // Click on a model card navigates to their profile page
+  document.getElementById('grid').addEventListener('click', (e) => {
+    const card = e.target.closest('.model');
+    if (!card || card.classList.contains('coming-soon')) return;
+    const slug = card.dataset.slug;
+    if (slug) window.location.href = `profile.html?model=${slug}`;
+  });
+
+  document.querySelectorAll('.grid-toggle button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.grid-toggle button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const grid = document.getElementById('grid');
+      grid.classList.remove('dense', 'large');
+      if (btn.dataset.density !== 'default') grid.classList.add(btn.dataset.density);
+    });
+  });
+
+  // ============== SEARCH ==============
+  const searchOverlay = document.getElementById('searchOverlay');
+  const searchInput = document.getElementById('searchInput');
+  const openSearch = () => {
+    searchOverlay.classList.add('open');
+    setTimeout(() => searchInput.focus(), 50);
+  };
+  const closeSearch = () => {
+    searchOverlay.classList.remove('open');
+    searchInput.value = '';
+    currentSearch = '';
+    renderRoster(currentFilter, currentSearch);
+  };
+  document.getElementById('searchToggle').addEventListener('click', openSearch);
+  document.getElementById('searchClose').addEventListener('click', closeSearch);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && searchOverlay.classList.contains('open')) closeSearch();
+    if ((e.key === 'k' || e.key === 'K') && (e.metaKey || e.ctrlKey)) {
+      e.preventDefault();
+      openSearch();
+    }
+  });
+  searchInput.addEventListener('input', (e) => {
+    currentSearch = e.target.value;
+    renderRoster(currentFilter, currentSearch);
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script src="site.js"></script>
+</body>
+</html>

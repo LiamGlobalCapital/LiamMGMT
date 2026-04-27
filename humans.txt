@@ -1,0 +1,20 @@
+/* TEAM */
+
+Liam Mgmt
+Site: liammgmt.com
+Email: hello@liammgmt.com
+Instagram: @liammgmt
+Location: New York / Los Angeles / Miami / Dallas
+
+/* SITE */
+
+Last update: 2026/04
+Standards: HTML5, CSS3, JavaScript
+Components: Vanilla JS, Cloudinary, Formspree, jsPDF
+Hosting: GitHub Pages
+
+/* COPYRIGHT */
+
+© Liam Mgmt — Liam Enterprises LLC
+All photographs, names, likenesses, and content are the property
+of Liam Mgmt and the talent we represent.

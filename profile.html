@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talent | Liam Mgmt</title>
+<meta name="description" content="Talent profile at Liam Mgmt. View measurements, portfolio, and tearsheet.">
+<meta name="keywords" content="male model, talent management, modeling portfolio, men's editorial, runway model">
+<meta name="author" content="Liam Mgmt">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://liammgmt.com/profile.html">
+
+<!-- OpenGraph (Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://liammgmt.com/profile.html">
+<meta property="og:site_name" content="Liam Mgmt">
+<meta property="og:title" content="Talent | Liam Mgmt">
+<meta property="og:description" content="Talent profile at Liam Mgmt. View measurements, portfolio, and tearsheet.">
+<meta property="og:image" content="https://liammgmt.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Liam Mgmt logo">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Talent | Liam Mgmt">
+<meta name="twitter:description" content="Talent profile at Liam Mgmt. View measurements, portfolio, and tearsheet.">
+<meta name="twitter:image" content="https://liammgmt.com/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="favicon.jpg">
+<link rel="apple-touch-icon" href="favicon.jpg">
+
+<!-- Theme -->
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #0a0a0a;
+    --muted: #888;
+    --line: #e6e6e6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Archivo', -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  /* ============== TOP BAR (matches index.html) ============== */
+  .topbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    height: 56px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .logo img { height: 32px; width: auto; display: block; }
+  .logo .wordmark { font-weight: 600; }
+  .logo .wordmark em { font-style: normal; font-weight: 300; opacity: 0.55; }
+  .topbar nav ul { display: flex; gap: 1.75rem; list-style: none; }
+  .topbar nav a {
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: opacity 0.2s;
+  }
+  .topbar nav a:hover { opacity: 0.5; }
+  .back-link {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    transition: opacity 0.2s;
+  }
+  .back-link:hover { opacity: 0.5; }
+  .back-link span { margin-right: 0.4rem; }
+
+  /* ============== PROFILE LAYOUT ============== */
+  .profile-wrap {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 0;
+    padding-top: 56px;
+    min-height: 100vh;
+  }
+
+  /* Left sidebar (sticky, like Ford) */
+  .profile-side {
+    position: sticky;
+    top: 56px;
+    height: calc(100vh - 56px);
+    border-right: 1px solid var(--line);
+    padding: 3rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+  }
+  .side-board {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+  .side-first {
+    font-family: 'Times New Roman', serif;
+    font-size: clamp(1.75rem, 2.5vw, 2.4rem);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.2rem;
+    word-break: break-word;
+  }
+  .side-last {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    color: var(--muted);
+    line-height: 1;
+    margin-bottom: 3rem;
+  }
+
+  .side-links {
+    list-style: none;
+    margin-bottom: auto;
+  }
+  .side-links li { margin-bottom: 1.1rem; }
+  .side-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    transition: opacity 0.2s;
+    padding: 0.25rem 0;
+  }
+  .side-links a:hover { opacity: 0.55; }
+  .side-links a.active {
+    opacity: 1;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .side-links a.active::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 1px;
+    background: currentColor;
+    margin-left: 0.4rem;
+  }
+  .side-links svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.5;
+  }
+
+  .side-back {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .side-back:hover { color: var(--ink); }
+
+  /* Main content area */
+  .profile-main {
+    padding: 3rem clamp(1.5rem, 4vw, 4rem) 6rem;
+  }
+
+  /* Page-title big first name */
+  .profile-title {
+    font-family: 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: clamp(4.5rem, 14vw, 12rem);
+    line-height: 0.88;
+    letter-spacing: -0.04em;
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+  }
+  .profile-title em {
+    font-style: italic;
+    color: var(--muted);
+    display: block;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-top: 0.25rem;
+  }
+
+  .profile-subtitle {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* Measurements box */
+  .measurements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem 3rem;
+    margin-bottom: 5rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .measurements-col h3 {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .measurements-list {
+    list-style: none;
+  }
+  .measurements-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.65rem 0;
+    border-bottom: 1px dotted var(--line);
+    font-size: 0.95rem;
+  }
+  .measurements-list li:last-child { border-bottom: none; }
+  .measurements-list .label-text {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .measurements-list .value {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.15rem;
+  }
+
+  /* Photo column */
+  .photo-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .photo-stack .photo {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background: #f0eee8;
+    overflow: hidden;
+  }
+  .photo-stack .photo.wide { aspect-ratio: 4 / 3; }
+  .photo-stack .photo svg, .photo-stack .photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* Optional 2-up rows */
+  .photo-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  .photo-row .photo { aspect-ratio: 3 / 4; }
+
+  /* Bottom CTA / footer */
+  .profile-foot {
+    margin-top: 6rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--line);
+    text-align: center;
+  }
+  .profile-foot .represented {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+  .profile-foot .agency-name {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--ink);
+  }
+  .profile-foot .more-talent {
+    margin-top: 2.5rem;
+    display: inline-block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: opacity 0.2s;
+  }
+  .profile-foot .more-talent:hover { opacity: 0.55; }
+
+  /* ============== VIEW HEADERS (Portfolio & Print) ============== */
+  .view-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .view-label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+  .view-title {
+    font-family: 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.75rem;
+  }
+  .view-title em { font-style: italic; color: var(--muted); }
+  .view-meta {
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  /* ============== PORTFOLIO GRID (full body of work) ============== */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .portfolio-cell {
+    aspect-ratio: 3 / 4;
+    background: #f0eee8;
+    overflow: hidden;
+  }
+  .portfolio-cell svg, .portfolio-cell img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .portfolio-cell:hover svg, .portfolio-cell:hover img {
+    transform: scale(1.03);
+  }
+
+  @media (max-width: 800px) {
+    .portfolio-grid { grid-template-columns: repeat(2, 1fr); gap: 0.4rem; }
+    .view-header { margin-bottom: 2.5rem; padding-bottom: 1.5rem; }
+  }
+
+  /* ============== PORTFOLIO GRID (full body of work) ============== */
+  @media (max-width: 900px) {
+    .topbar nav { display: none; }
+    .profile-wrap {
+      grid-template-columns: 1fr;
+    }
+    .profile-side {
+      position: static;
+      height: auto;
+      border-right: none;
+      border-bottom: 1px solid var(--line);
+      padding: 2rem 1.25rem;
+    }
+    .side-first { font-size: 1.6rem; margin-bottom: 0.15rem; }
+    .side-last { font-size: 1.2rem; margin-bottom: 1.5rem; }
+    .side-links { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 0; }
+    .side-links li { margin-bottom: 0; }
+    .side-back { margin-top: 1.5rem; padding-top: 1.5rem; }
+    .profile-main { padding: 2rem 1.25rem 4rem; }
+    .measurements { grid-template-columns: 1fr; gap: 2.5rem; }
+  }
+
+  /* Not found state */
+  .not-found {
+    grid-column: 1 / -1;
+    padding: 8rem 2rem;
+    text-align: center;
+  }
+  .not-found h1 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .not-found p { color: var(--muted); margin-bottom: 2rem; }
+</style>
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Liam Mgmt",
+  "alternateName": "Liam Management",
+  "legalName": "Liam Enterprises LLC",
+  "url": "https://liammgmt.com",
+  "logo": "https://liammgmt.com/og-image.jpg",
+  "image": "https://liammgmt.com/og-image.jpg",
+  "description": "Liam Mgmt is a boutique talent management agency representing male models and digital creators. Mother agency placing talent with leading agencies worldwide.",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "304 Park Ave S",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10010",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Miami",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Dallas",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "bookings@liammgmt.com",
+      "contactType": "Bookings"
+    },
+    {
+      "@type": "ContactPoint",
+      "email": "scouting@liammgmt.com",
+      "contactType": "Scouting"
+    },
+    {
+      "@type": "ContactPoint",
+      "email": "hello@liammgmt.com",
+      "contactType": "General Inquiries"
+    }
+  ],
+  "sameAs": [
+    "https://instagram.com/liammgmt"
+  ],
+  "knowsAbout": ["Talent Management", "Modeling", "Male Modeling", "Digital Creators", "Influencer Management", "Muay Thai Athlete Representation"]
+}
+</script>
+</head>
+<body>
+
+<div id="site-nav"></div>
+
+<div id="profile-root"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="roster.js"></script>
+<script>
+
+
+  // Helper: deterministic shade
+  function shade(hex, percent) {
+    const num = parseInt(hex.replace('#',''), 16);
+    const r = Math.max(0, Math.min(255, (num >> 16) + percent));
+    const g = Math.max(0, Math.min(255, ((num >> 8) & 0x00FF) + percent));
+    const b = Math.max(0, Math.min(255, (num & 0x0000FF) + percent));
+    return '#' + ((r << 16) | (g << 8) | b).toString(16).padStart(6, '0');
+  }
+
+  function generatePortrait(seed, palette) {
+    const [skin, hair] = palette;
+    const variants = [
+      `<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs><linearGradient id="bg${seed}a" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="${shade(skin, 12)}"/>
+          <stop offset="100%" stop-color="${shade(skin, -8)}"/>
+        </linearGradient></defs>
+        <rect width="300" height="400" fill="url(#bg${seed}a)"/>
+        <path d="M 30 400 Q 30 280 80 250 L 220 250 Q 270 280 270 400 Z" fill="${shade(hair, 35)}" opacity="0.4"/>
+        <rect x="125" y="220" width="50" height="50" fill="${shade(skin, -15)}"/>
+        <ellipse cx="150" cy="170" rx="62" ry="78" fill="${skin}"/>
+        <path d="M 88 145 Q 95 90 150 85 Q 205 90 212 145 Q 210 110 150 105 Q 90 110 88 145 Z" fill="${hair}"/>
+        <path d="M 95 200 Q 150 245 205 200 L 200 220 Q 150 250 100 220 Z" fill="${shade(skin, -20)}" opacity="0.3"/>
+      </svg>`,
+      `<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs><linearGradient id="bg${seed}b" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="${shade(skin, 18)}"/>
+          <stop offset="100%" stop-color="${shade(skin, -12)}"/>
+        </linearGradient></defs>
+        <rect width="300" height="400" fill="url(#bg${seed}b)"/>
+        <path d="M 20 400 Q 30 270 90 240 L 230 250 Q 280 280 285 400 Z" fill="${shade(hair, 40)}" opacity="0.35"/>
+        <rect x="135" y="215" width="45" height="55" fill="${shade(skin, -18)}"/>
+        <ellipse cx="160" cy="165" rx="58" ry="75" fill="${skin}"/>
+        <path d="M 100 140 Q 110 80 165 80 Q 220 95 218 150 Q 200 105 165 100 Q 105 105 100 140 Z" fill="${hair}"/>
+      </svg>`,
+      `<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs><linearGradient id="bg${seed}c" x1="50%" y1="0%" x2="50%" y2="100%">
+          <stop offset="0%" stop-color="${shade(skin, 8)}"/>
+          <stop offset="100%" stop-color="${shade(skin, -15)}"/>
+        </linearGradient></defs>
+        <rect width="300" height="400" fill="url(#bg${seed}c)"/>
+        <path d="M 0 400 Q 0 260 70 230 L 230 230 Q 300 260 300 400 Z" fill="${shade(hair, 30)}" opacity="0.5"/>
+        <rect x="128" y="195" width="44" height="50" fill="${shade(skin, -12)}"/>
+        <ellipse cx="150" cy="150" rx="56" ry="70" fill="${skin}"/>
+        <path d="M 92 130 Q 100 75 150 70 Q 205 80 210 135 Q 195 95 150 90 Q 95 95 92 130 Z" fill="${hair}"/>
+        <path d="M 95 175 Q 150 215 205 175 L 200 195 Q 150 225 100 195 Z" fill="${shade(skin, -25)}" opacity="0.25"/>
+      </svg>`
+    ];
+    return variants[seed % 3];
+  }
+
+  // Get model and view from URL: ?model=slug&view=portfolio|print
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get('model');
+  const view = params.get('view') || 'overview';   // 'overview' (default) | 'portfolio' | 'print'
+  const model = roster.find(r => r.slug === slug);
+  const root = document.getElementById('profile-root');
+
+  if (!model || model.comingSoon) {
+    root.innerHTML = `
+      <div class="not-found">
+        <h1>Talent not found.</h1>
+        <p>The profile you're looking for doesn't exist or hasn't been published yet.</p>
+        <a href="index.html#roster" class="more-talent" style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.18em;border-bottom:1px solid currentColor;padding-bottom:2px;">View all talent</a>
+      </div>`;
+  } else {
+    const viewLabel = view === 'portfolio' ? ' Portfolio' : '';
+    const pageTitle = `${model.first} ${model.last}${viewLabel} | Liam Mgmt`;
+    const pageDesc = `${model.first} ${model.last} is represented by Liam Mgmt. ${model.tags.join(', ')}. View measurements, portfolio, and more.`;
+    document.title = pageTitle;
+
+    // Update meta tags dynamically for SEO and social sharing
+    const setMeta = (selector, attr, value) => {
+      let el = document.querySelector(selector);
+      if (el) el.setAttribute(attr, value);
+    };
+    setMeta('meta[name="description"]', 'content', pageDesc);
+    setMeta('meta[property="og:title"]', 'content', pageTitle);
+    setMeta('meta[property="og:description"]', 'content', pageDesc);
+    setMeta('meta[name="twitter:title"]', 'content', pageTitle);
+    setMeta('meta[name="twitter:description"]', 'content', pageDesc);
+
+    // Update canonical URL
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.href = `https://liammgmt.com/profile.html?model=${model.slug}${view !== 'overview' ? '&view=' + view : ''}`;
+    }
+    // Update og:url to match
+    setMeta('meta[property="og:url"]', 'content', canonical ? canonical.href : '');
+
+    // If model has photos, use the card image as the share image
+    if (model.photoCount > 0) {
+      const photoUrl = `https://liammgmt.com/photos/${model.slug}/card.jpg`;
+      setMeta('meta[property="og:image"]', 'content', photoUrl);
+      setMeta('meta[name="twitter:image"]', 'content', photoUrl);
+      setMeta('meta[property="og:image:alt"]', 'content', `${model.first} ${model.last}`);
+    }
+
+    // Inject Person schema for this talent
+    const oldPersonSchema = document.getElementById('person-schema');
+    if (oldPersonSchema) oldPersonSchema.remove();
+
+    const divisionSchema = model.division === 'creators' ? 'Creators / Influencers' :
+                           model.division === 'men' ? "Men's Division" : 'Development';
+
+    const personSchema = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": `${model.first} ${model.last}`,
+      "givenName": model.first,
+      "familyName": model.last,
+      "url": `https://liammgmt.com/profile.html?model=${model.slug}`,
+      "jobTitle": model.sport ? "Athlete" : "Model",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Liam Mgmt",
+        "url": "https://liammgmt.com"
+      }
+    };
+    if (model.instagram && model.instagram.url) {
+      personSchema.sameAs = [model.instagram.url];
+    }
+    if (model.photoCount > 0) {
+      personSchema.image = `https://liammgmt.com/photos/${model.slug}/card.jpg`;
+    }
+    if (model.stats && model.stats.height) {
+      personSchema.height = model.stats.height;
+    }
+    if (model.tags) {
+      personSchema.knowsAbout = model.tags;
+    }
+
+    const schemaScript = document.createElement('script');
+    schemaScript.id = 'person-schema';
+    schemaScript.type = 'application/ld+json';
+    schemaScript.textContent = JSON.stringify(personSchema, null, 2);
+    document.head.appendChild(schemaScript);
+
+    // Build measurements based on whether the talent is an athlete or model
+    const measurementsBlock = model.sport ? `
+      <div class="measurements">
+        <div class="measurements-col">
+          <h3>Stats</h3>
+          <ul class="measurements-list">
+            <li><span class="label-text">Height</span><span class="value">${model.stats.height}</span></li>
+            <li><span class="label-text">Weight</span><span class="value">${model.stats.weight}</span></li>
+            <li><span class="label-text">Reach</span><span class="value">${model.stats.reach}</span></li>
+            <li><span class="label-text">Stance</span><span class="value">${model.stats.stance}</span></li>
+          </ul>
+        </div>
+        <div class="measurements-col">
+          <h3>Discipline</h3>
+          <ul class="measurements-list">
+            <li><span class="label-text">Sport</span><span class="value">Muay Thai</span></li>
+            <li><span class="label-text">Record</span><span class="value">${model.stats.record}</span></li>
+            <li><span class="label-text">Status</span><span class="value">Active</span></li>
+            <li><span class="label-text">Based</span><span class="value">${model.territory}</span></li>
+          </ul>
+        </div>
+      </div>` : `
+      <div class="measurements">
+        <div class="measurements-col">
+          <h3>Measurements</h3>
+          <ul class="measurements-list">
+            <li><span class="label-text">Height</span><span class="value">${model.stats.height}</span></li>
+            <li><span class="label-text">Hair Color</span><span class="value">${model.stats.hair}</span></li>
+            <li><span class="label-text">Eyes</span><span class="value">${model.stats.eyes}</span></li>
+            <li><span class="label-text">Waist</span><span class="value">${model.stats.waist}</span></li>
+          </ul>
+        </div>
+        <div class="measurements-col">
+          <h3>Sizes</h3>
+          <ul class="measurements-list">
+            <li><span class="label-text">Suit</span><span class="value">${model.stats.suit}</span></li>
+            <li><span class="label-text">Shoes</span><span class="value">${model.stats.shoes}</span></li>
+            <li><span class="label-text">Based</span><span class="value">${model.territory}</span></li>
+          </ul>
+        </div>
+      </div>`;
+
+    // Helper: pick real photo if available (photoCount tells us how many we have), else fallback
+    const hasPhotos = model.photoCount && model.photoCount > 0;
+    const photoNum = (n) => String(n).padStart(2, '0');
+    const realImg = (n, wide) => {
+      const idx = ((n - 1) % model.photoCount) + 1;  // wrap around if we have fewer photos than slots
+      const fallback = generatePortrait(n, model.palette).replace(/'/g, '&apos;');
+      return `<img src="photos/${model.slug}/${photoNum(idx)}.jpg" alt="${model.first} ${model.last}" loading="lazy" onerror="this.outerHTML=this.dataset.fb" data-fb='${fallback}'>`;
+    };
+    const photo = (i) => `<div class="photo">${hasPhotos ? realImg(i + 1) : generatePortrait(i, model.palette)}</div>`;
+    const wide = (i) => `<div class="photo wide">${hasPhotos ? realImg(i + 1, true) : generatePortrait(i, model.palette)}</div>`;
+    const photoRow = (a, b) => `<div class="photo-row">${photo(a)}${photo(b)}</div>`;
+
+    const photoStack = [
+      photo(0),               // hero shot
+      photoRow(1, 2),
+      photo(3),
+      wide(4),
+      photoRow(5, 6),
+      photo(7),
+      photo(8),
+      photoRow(9, 10),
+      photo(11),
+      wide(12),
+    ].join('');
+
+    const divisionLabel = model.division === 'creators' ? 'Creators / Influencers' :
+                          model.division === 'men' ? "Men's Division" : 'Development';
+
+    // Build the main content based on which view is active
+    let mainContent = '';
+    if (view === 'portfolio') {
+      // Portfolio: full body of work, clean photo-only grid
+      const cellCount = hasPhotos ? model.photoCount : 16;
+      const portfolioCells = Array.from({ length: cellCount }, (_, i) =>
+        `<div class="portfolio-cell">${hasPhotos ? realImg(i + 1) : generatePortrait(i, model.palette)}</div>`
+      ).join('');
+      mainContent = `
+          <div class="view-header">
+            <span class="view-label">Portfolio</span>
+            <h2 class="view-title">${model.first} <em>${model.last}</em></h2>
+            <p class="view-meta">${cellCount} images &middot; ${divisionLabel}</p>
+          </div>
+          <div class="portfolio-grid">${portfolioCells}</div>
+        `;
+    } else {
+      // Overview (default): name, measurements, curated photo stack
+      mainContent = `
+          <h1 class="profile-title">${model.first}<em>${model.last}</em></h1>
+          <div class="profile-subtitle">${divisionLabel} &nbsp;/&nbsp; ${model.tags.join(' &middot; ')}</div>
+          ${measurementsBlock}
+          <div class="photo-stack">${photoStack}</div>
+        `;
+    }
+
+    root.innerHTML = `
+      <div class="profile-wrap">
+        <aside class="profile-side">
+          <div class="side-board">${divisionLabel}</div>
+          <div class="side-first">${model.first}</div>
+          <div class="side-last">${model.last}</div>
+          <ul class="side-links">
+            <li>
+              <a href="?model=${model.slug}" class="${view === 'overview' ? 'active' : ''}">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>
+                Overview
+              </a>
+            </li>
+            <li>
+              <a href="?model=${model.slug}&view=portfolio" class="${view === 'portfolio' ? 'active' : ''}">
+                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#" id="print-link" data-slug="${model.slug}">
+                <svg viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><rect x="2" y="9" width="20" height="9" rx="1"/><rect x="6" y="14" width="12" height="8"/></svg>
+                Print
+              </a>
+            </li>
+            <li>
+              <a href="${model.instagram.url}" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2"/></svg>
+                Instagram
+              </a>
+            </li>
+          </ul>
+          <a href="index.html#roster" class="side-back">&larr; More Talent</a>
+        </aside>
+        <main class="profile-main">
+          ${mainContent}
+          <div class="profile-foot">
+            <div class="represented">Represented by</div>
+            <div class="agency-name">Liam Mgmt, ${model.territory}</div>
+            <div><a href="index.html#roster" class="more-talent">View All Talent</a></div>
+          </div>
+        </main>
+      </div>`;
+
+    // ============== PRINT TEARSHEET (PDF) ==============
+    const printLink = document.getElementById('print-link');
+    if (printLink) {
+      printLink.addEventListener('click', async (e) => {
+        e.preventDefault();
+        printLink.style.opacity = '0.5';
+        printLink.style.pointerEvents = 'none';
+        const originalText = printLink.innerHTML;
+        printLink.innerHTML = printLink.innerHTML.replace('Print', 'Generating...');
+
+        try {
+          // Try the pre-uploaded custom tearsheet first; fall through if 404
+          const customUrl = `photos/${model.slug}/tearsheet.pdf`;
+          const head = await fetch(customUrl, { method: 'HEAD' }).catch(() => null);
+          if (head && head.ok) {
+            window.location.href = customUrl;
+            return;
+          }
+          // Auto-generate the PDF from photos in the model's folder
+          await generateTearsheetPDF(model);
+        } catch (err) {
+          console.error('Tearsheet generation failed:', err);
+          alert('Could not generate tearsheet. Please try again.');
+        } finally {
+          printLink.style.opacity = '';
+          printLink.style.pointerEvents = '';
+          printLink.innerHTML = originalText;
+        }
+      });
+    }
+  }
+
+  // ============== GENERATE TEARSHEET PDF ==============
+  async function generateTearsheetPDF(model) {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF({ unit: 'pt', format: 'letter', orientation: 'portrait' });
+    const pageW = 612, pageH = 792, margin = 48;
+
+    // ----- COVER PAGE -----
+    const logoImg = document.querySelector('.logo img');
+    if (logoImg) {
+      try {
+        const logoData = await imgToDataURL(logoImg.src);
+        const logoSize = 50;
+        doc.addImage(logoData, 'JPEG', (pageW - logoSize) / 2, 90, logoSize, logoSize);
+      } catch (e) { /* skip if it fails */ }
+    }
+
+    doc.setFont('times', 'normal');
+    doc.setFontSize(11);
+    doc.setTextColor(120);
+    doc.text('LIAM MGMT', pageW / 2, 175, { align: 'center' });
+
+    // Big name
+    doc.setFontSize(72);
+    doc.setTextColor(10);
+    doc.text(model.first, pageW / 2, 320, { align: 'center' });
+    doc.setFont('times', 'italic');
+    doc.setTextColor(120);
+    doc.text(model.last, pageW / 2, 395, { align: 'center' });
+
+    const divisionLabel = model.division === 'creators' ? 'Creators / Influencers' :
+                          model.division === 'men' ? "Men's Division" : 'Development';
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(8);
+    doc.setTextColor(140);
+    doc.text(divisionLabel.toUpperCase() + '   ·   ' + model.tags.join('   ·   ').toUpperCase(),
+             pageW / 2, 435, { align: 'center', charSpace: 1.5 });
+
+    // Measurements
+    const measY = 510;
+    doc.setDrawColor(220);
+    doc.setLineWidth(0.5);
+    doc.line(margin + 80, measY - 20, pageW - margin - 80, measY - 20);
+    doc.setFontSize(7);
+    doc.setTextColor(140);
+    doc.text('MEASUREMENTS', pageW / 2, measY, { align: 'center', charSpace: 2 });
+
+    const stats = model.sport ? [
+      ['Height', model.stats.height], ['Weight', model.stats.weight],
+      ['Reach', model.stats.reach], ['Stance', model.stats.stance],
+      ['Record', model.stats.record], ['Sport', 'Muay Thai']
+    ] : [
+      ['Height', model.stats.height], ['Hair', model.stats.hair],
+      ['Eyes', model.stats.eyes], ['Waist', model.stats.waist],
+      ['Suit', model.stats.suit], ['Shoes', model.stats.shoes]
+    ];
+
+    let sy = measY + 30;
+    stats.forEach(([label, value], i) => {
+      const col = i % 2;
+      const row = Math.floor(i / 2);
+      const x = col === 0 ? pageW / 2 - 110 : pageW / 2 + 30;
+      const yy = sy + row * 28;
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(7);
+      doc.setTextColor(140);
+      doc.text(label.toUpperCase(), x, yy, { charSpace: 1.5 });
+      doc.setFont('times', 'normal');
+      doc.setFontSize(11);
+      doc.setTextColor(20);
+      doc.text(String(value), x + 80, yy, { align: 'right' });
+    });
+
+    // Footer
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(7);
+    doc.setTextColor(140);
+    doc.text('REPRESENTED BY LIAM MGMT   ·   ' + model.territory.toUpperCase(),
+             pageW / 2, pageH - 50, { align: 'center', charSpace: 1.5 });
+    doc.text('LIAMMGMT.COM', pageW / 2, pageH - 36, { align: 'center', charSpace: 1.5 });
+
+    // ----- PHOTO PAGES -----
+    const hasPhotos = model.photoCount && model.photoCount > 0;
+    const photoCount = hasPhotos ? Math.min(model.photoCount, 12) : 0;
+
+    if (photoCount > 0) {
+      for (let i = 1; i <= photoCount; i++) {
+        const photoNum = String(i).padStart(2, '0');
+        try {
+          const dataUrl = await imgToDataURL(`photos/${model.slug}/${photoNum}.jpg`);
+          const img = await loadImage(`photos/${model.slug}/${photoNum}.jpg`);
+          doc.addPage();
+          const photoW = pageW - margin * 2;
+          const photoH = pageH - margin * 2 - 30;
+          const ratio = img.width / img.height;
+          let w = photoW, h = photoW / ratio;
+          if (h > photoH) { h = photoH; w = photoH * ratio; }
+          const x = (pageW - w) / 2;
+          const y = (pageH - h - 30) / 2;
+          doc.addImage(dataUrl, 'JPEG', x, y, w, h);
+          doc.setFont('helvetica', 'normal');
+          doc.setFontSize(7);
+          doc.setTextColor(140);
+          doc.text(`${String(i).padStart(2, '0')}   ·   ${model.first.toUpperCase()} ${model.last.toUpperCase()}`,
+                   pageW / 2, pageH - 30, { align: 'center', charSpace: 1.5 });
+        } catch (e) {
+          console.warn(`Skipping photo ${photoNum}: ${e.message}`);
+        }
+      }
+    } else {
+      doc.addPage();
+      doc.setFont('times', 'italic');
+      doc.setFontSize(18);
+      doc.setTextColor(140);
+      doc.text('Portfolio images coming soon.', pageW / 2, pageH / 2, { align: 'center' });
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(8);
+      doc.setTextColor(160);
+      doc.text('Contact bookings@liammgmt.com for digitals.', pageW / 2, pageH / 2 + 24, { align: 'center', charSpace: 1 });
+    }
+
+    const filename = `${model.first}_${model.last}_LiamMgmt.pdf`.replace(/\s+/g, '_');
+    doc.save(filename);
+  }
+
+  // Helper: load image element
+  function loadImage(src) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = () => resolve(img);
+      img.onerror = () => reject(new Error('Image load failed: ' + src));
+      img.src = src;
+    });
+  }
+
+  // Helper: convert image URL to JPEG data URL via canvas
+  async function imgToDataURL(src) {
+    const img = await loadImage(src);
+    const canvas = document.createElement('canvas');
+    canvas.width = img.naturalWidth || img.width;
+    canvas.height = img.naturalHeight || img.height;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0);
+    return canvas.toDataURL('image/jpeg', 0.85);
+  }
+</script>
+
+<div id="site-footer"></div>
+
+<script src="site.js"></script>
+</body>
+</html>

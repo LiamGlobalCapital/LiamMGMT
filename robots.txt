@@ -1,0 +1,9 @@
+# Liam Mgmt — robots.txt
+# Allow all well-behaved crawlers to index the site.
+
+User-agent: *
+Allow: /
+Disallow: /photos/scout-applications/
+
+# Sitemap
+Sitemap: https://liammgmt.com/sitemap.xml
